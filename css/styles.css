@@ -64,6 +64,7 @@
   --bs-body-bg: #fff;
 }
 
+
 *,
 *::before,
 *::after {
@@ -84,6 +85,14 @@
   margin: auto;
   margin-top: 18%;
 }
+
+.avaprofil{
+  border-radius: 50%;
+  width: 50%; 
+  height: 50%; 
+  
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
