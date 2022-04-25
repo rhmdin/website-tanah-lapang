@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script
+      src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Admin - Blog</title>
+  </head>
+
+  <body class="sb-sidenav-collapse-arrow">
+    <div id="layoutSidenav">
+      <div id="layoutSidenav_nav">
+        <nav
+          class="sb-sidenav accordion sb-sidenav-dark"
+          id="sidenavAccordion"
+          style="color: #fafbff"
+        >
+          <div class="sb-sidenav-menu" style="background-color: #1b1c31">
+            <div class="nav">
+              <img class="avasidebar" src="pp.jpg" alt="Foto Profil" />
+              <div
+                class="small"
+                style="
+                  margin: auto;
+                  font-weight: bolder;
+                  padding-top: 5%;
+                  font-family: Manrope;
+                "
+              >
+                Kelurahan Tanah Lapang
+              </div>
+              <div
+                class="small"
+                style="margin: auto; font-weight: bolder; font-family: Manrope"
+              >
+                SAWAHLUNTO
+              </div>
+              <hr style="border: 1px solid #ff7f5c" />
+              <a class="nav-link" href="index.html">
+                <div class="sb-nav-link-icon">
+                  <i class="fas fa-tachometer-alt"></i>
+                </div>
+                Admin
+              </a>
+              <a
+                class="nav-link collapsed"
+                href="#"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseLayouts"
+                aria-expanded="false"
+                aria-controls="collapseLayouts"
+              >
+                <div class="sb-nav-link-icon">
+                  <i class="fas fa-columns"></i>
+                </div>
+                Konten
+                <div class="sb-sidenav-collapse-arrow">
+                  <i class="fas fa-angle-down"></i>
+                </div>
+              </a>
+              <div
+                class="collapse"
+                id="collapseLayouts"
+                aria-labelledby="headingOne"
+                data-bs-parent="#sidenavAccordion"
+              >
+                <nav class="sb-sidenav-menu-nested nav">
+                  <a class="nav-link" href="visi-misi.html">Profil Kelurahan</a>
+                  <a class="nav-link" href="layout-sidenav-light.html"
+                    >Organisasi</a
+                  >
+                  <a class="nav-link" href="blog.html">Blog</a>
+                  <a class="nav-link" href="layout-sidenav-light.html">About</a>
+                </nav>
+              </div>
+              <a class="nav-link" href="charts.html">
+                <div class="sb-nav-link-icon">
+                  <i class="fas fa-chart-area"></i>
+                </div>
+                Data Penduduk
+              </a>
+              <a class="nav-link" href="tables.html">
+                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                Data Fasilitas
+              </a>
+            </div>
+          </div>
+          <div class="sb-sidenav-footer">
+            <div class="small">Logged in as:</div>
+            Admin
+          </div>
+        </nav>
+      </div>
+      <div id="layoutSidenav_content">
+        <nav class="sb-topnav navbar navbar-expand">
+          <!-- Navbar Brand-->
+          <!-- Sidebar Toggle-->
+          <button
+            class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 text-black"
+            id="sidebarToggle"
+            href="#!"
+            style="margin: 3%"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <!-- Navbar Search-->
+          <form
+            class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0"
+          ></form>
+          <!-- Navbar-->
+          <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-black"
+                id="navbarDropdown"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img class="avapp" src="pp.jpg" alt="Foto Profil" />
+                Admin
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end text-black"
+                aria-labelledby="navbarDropdown"
+              >
+                <li><a class="dropdown-item" href="#!">Profil</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#!">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <main>
+          <div class="container">
+            <div class="content p-4">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="me-3">
+                    <a
+                      href="#"
+                      class="btn btn-sm"
+                      style="font-weight: bold; font-size: 13px; color: #404444"
+                    >
+                      Konten
+                    </a>
+                  </li>
+                  <li class="active" aria-current="page">
+                    <a
+                      href="#"
+                      class="btn btn-sm shadow-sm px-3"
+                      style="
+                        background-color: #ff7f5c;
+                        color: #fff;
+                        font-weight: bold;
+                        font-size: 13px;
+                        border-radius: 10px;
+                      "
+                      >Blog</a
+                    >
+                  </li>
+                </ol>
+              </nav>
+
+              <div class="row mx-4 mt-5">
+                <div class="col-6">
+                  <div
+                    class="title ps-0"
+                    style="border-bottom: 2px solid #ff7f5c; width: 80px"
+                  >
+                    Daftar Blog
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <a
+                    href="tBlog.html"
+                    class="btn float-end"
+                    style="
+                      background-color: #3734a9;
+                      color: #fff;
+                      font-size: 14px;
+                      font-weight: bold;
+                      border-radius: 10px;
+                    "
+                    >Tambah</a
+                  >
+                </div>
+              </div>
+
+              <div
+                class="row mt-4"
+                style="margin-left: 40px; margin-right: 40px"
+              >
+                <table
+                  id="datatablesSimple"
+                  class="table table-borderless"
+                  style="border: transparent"
+                >
+                  <thead
+                    style="
+                      background-color: #ff7f5c;
+                      color: #fff;
+                      font-size: 14px;
+                      height: 50px;
+                    "
+                    class="shadow-sm align-middle"
+                  >
+                    <tr>
+                      <th scope="col" style="border-radius: 3px 0 0 3px">
+                        Judul Blog
+                      </th>
+                      <th scope="col">Tanggal</th>
+                      <th scope="col">Author</th>
+                      <th scope="col" width="35%">Isi</th>
+                      <th scope="col" style="border-radius: 0 3px 3px 0">
+                        Action
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Berikut Tanggapan Lesti...</td>
+                      <td>08-08-2018</td>
+                      <td>Nedia Simanjuntak</td>
+                      <td>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam massa mi, facilisis vitae convallis in, eleifend
+                        vel sem...
+                      </td>
+                      <td>
+                        <a
+                          href="#"
+                          class="btn btn-sm"
+                          style="background-color: #3734a9"
+                          ><i class="bi bi-search" style="color: #fff"></i
+                        ></a>
+                        <a
+                          href="eBlog.html"
+                          class="btn btn-sm"
+                          style="background-color: #e15b29"
+                          ><i class="bi bi-pencil-fill" style="color: #fff"></i
+                        ></a>
+                        <a href="#" class="btn btn-sm btn-danger"
+                          ><i class="bi bi-trash-fill"></i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Berikut Tanggapan Lesti...</td>
+                      <td>08-08-2018</td>
+                      <td>Nedia Simanjuntak</td>
+                      <td>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam massa mi, facilisis vitae convallis in, eleifend
+                        vel sem...
+                      </td>
+                      <td>
+                        <a
+                          href="#"
+                          class="btn btn-sm"
+                          style="background-color: #3734a9"
+                          ><i class="bi bi-search" style="color: #fff"></i
+                        ></a>
+                        <a
+                          href="#"
+                          class="btn btn-sm"
+                          style="background-color: #e15b29"
+                          ><i class="bi bi-pencil-fill" style="color: #fff"></i
+                        ></a>
+                        <a href="#" class="btn btn-sm btn-danger"
+                          ><i class="bi bi-trash-fill"></i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Berikut Tanggapan Lesti...</td>
+                      <td>08-08-2018</td>
+                      <td>Nedia Simanjuntak</td>
+                      <td>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam massa mi, facilisis vitae convallis in, eleifend
+                        vel sem...
+                      </td>
+                      <td>
+                        <a
+                          href="#"
+                          class="btn btn-sm"
+                          style="background-color: #3734a9"
+                          ><i class="bi bi-search" style="color: #fff"></i
+                        ></a>
+                        <a
+                          href="#"
+                          class="btn btn-sm"
+                          style="background-color: #e15b29"
+                          ><i class="bi bi-pencil-fill" style="color: #fff"></i
+                        ></a>
+                        <a href="#" class="btn btn-sm btn-danger"
+                          ><i class="bi bi-trash-fill"></i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Berikut Tanggapan Lesti...</td>
+                      <td>08-08-2018</td>
+                      <td>Ane Simanjuntak</td>
+                      <td>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam massa mi, facilisis vitae convallis in, eleifend
+                        vel sem...
+                      </td>
+                      <td>
+                        <a
+                          href="#"
+                          class="btn btn-sm"
+                          style="background-color: #3734a9"
+                          ><i class="bi bi-search" style="color: #fff"></i
+                        ></a>
+                        <a
+                          href="#"
+                          class="btn btn-sm"
+                          style="background-color: #e15b29"
+                          ><i class="bi bi-pencil-fill" style="color: #fff"></i
+                        ></a>
+                        <a href="#" class="btn btn-sm btn-danger"
+                          ><i class="bi bi-trash-fill"></i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Berikut Tanggapan Lesti...</td>
+                      <td>08-08-2018</td>
+                      <td>Nedia Simanjuntak</td>
+                      <td>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam massa mi, facilisis vitae convallis in, eleifend
+                        vel sem...
+                      </td>
+                      <td>
+                        <a
+                          href="#"
+                          class="btn btn-sm"
+                          style="background-color: #3734a9"
+                          ><i class="bi bi-search" style="color: #fff"></i
+                        ></a>
+                        <a
+                          href="#"
+                          class="btn btn-sm"
+                          style="background-color: #e15b29"
+                          ><i class="bi bi-pencil-fill" style="color: #fff"></i
+                        ></a>
+                        <a href="#" class="btn btn-sm btn-danger"
+                          ><i class="bi bi-trash-fill"></i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Berikut Tanggapan Lesti...</td>
+                      <td>08-08-2018</td>
+                      <td>Nedia Simanjuntak</td>
+                      <td>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam massa mi, facilisis vitae convallis in, eleifend
+                        vel sem...
+                      </td>
+                      <td>
+                        <a
+                          href="#"
+                          class="btn btn-sm"
+                          style="background-color: #3734a9"
+                          ><i class="bi bi-search" style="color: #fff"></i
+                        ></a>
+                        <a
+                          href="#"
+                          class="btn btn-sm"
+                          style="background-color: #e15b29"
+                          ><i class="bi bi-pencil-fill" style="color: #fff"></i
+                        ></a>
+                        <a href="#" class="btn btn-sm btn-danger"
+                          ><i class="bi bi-trash-fill"></i
+                        ></a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="py-4 bg-light mt-auto">
+          <div class="container-fluid px-4">
+            <div
+              class="d-flex align-items-center justify-content-between small"
+            >
+              <div class="text-muted">
+                Copyright &copy Y2022 Tanah Lapang X LDKOM. All rights reserved.
+              </div>
+              <div>
+                <a href="#">Privacy Policy</a>
+                &middot;
+                <a href="#">Terms &amp; Conditions</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/demo/chart-area-demo.js"></script>
+    <script src="assets/demo/chart-bar-demo.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/datatables-simple-demo.js"></script>
+  </body>
+</html>
