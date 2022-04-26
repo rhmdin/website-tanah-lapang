@@ -64,6 +64,24 @@
   --bs-body-bg: #fff;
 }
 
+.cover{
+  position: relative;
+  width: 1440px;
+  height: 786px;
+}
+
+.header
+{
+    margin-top:75px;
+} 
+
+.form-box{
+  width: 410px;
+  padding-bottom: 30px;
+  color: #fff;
+  box-shadow: 0 0 20px 2px rgba (0,0,0,0.5);
+}
+
 
 *,
 *::before,
@@ -86,11 +104,17 @@
   margin-top: 18%;
 }
 
+.org{
+  width: 500px; 
+  height: 300px; 
+  margin: auto;
+  margin-top: 18%;
+}
+
 .avaprofil{
   border-radius: 50%;
   width: 50%; 
   height: 50%; 
-  
 }
 
 @media (prefers-reduced-motion: no-preference) {
