@@ -22,7 +22,7 @@
     />
     <link rel="stylesheet" href="css/main.css" />
 
-    <title>Admin - Blog</title>
+    <title>Admin - Profil Kelurahan</title>
   </head>
 
   <body class="sb-sidenav-collapse-arrow">
@@ -60,6 +60,8 @@
                 </div>
                 Admin
               </a>
+
+              <!-- Konten -->
               <a
                 class="nav-link collapsed"
                 href="#"
@@ -76,6 +78,8 @@
                   <i class="fas fa-angle-down"></i>
                 </div>
               </a>
+
+              <!-- Menu Konten -->
               <div
                 class="collapse"
                 id="collapseLayouts"
@@ -83,16 +87,47 @@
                 data-bs-parent="#sidenavAccordion"
               >
                 <nav class="sb-sidenav-menu-nested nav">
-                  <a class="nav-link" href="layout-static.html"
-                    >Profil Kelurahan</a
+                  <!-- Profil Kelurahan -->
+                  <a
+                    class="nav-link collapsed"
+                    href="#"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseLayouts2"
+                    aria-expanded="false"
+                    aria-controls="collapseLayouts"
+                    id="sidenavAccordion2"
                   >
-                  <a class="nav-link" href="layout-sidenav-light.html"
-                    >Organisasi</a
+                    <div class="sb-nav-link">Profil Kelurahan</div>
+                    <div class="sb-sidenav-collapse-arrow">
+                      <i class="fas fa-angle-down"></i>
+                    </div>
+                  </a>
+
+                  <!-- Menu Profil Kelurahan -->
+                  <div
+                    class="collapse"
+                    id="collapseLayouts2"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#sidenavAccordion2"
                   >
+                    <nav class="sb-sidenav-menu-nested nav">
+                      <a class="nav-link" href="visi-misi.html">Visi Misi</a>
+                      <a class="nav-link" href="sejarah.html">Sejarah</a>
+                      <a class="nav-link" href="struktur-organisasi.html"
+                        >Struktur Organisasi</a
+                      >
+                      <a class="nav-link" href="perangkat-kelurahan.html"
+                        >Perangkat Kelurahan</a
+                      >
+                    </nav>
+                  </div>
+
+                  <a class="nav-link" href="organisasi.html">Organisasi</a>
                   <a class="nav-link" href="blog.html">Blog</a>
                   <a class="nav-link" href="layout-sidenav-light.html">About</a>
                 </nav>
               </div>
+              <!-- Akhir Menu Konten -->
               <a class="nav-link" href="charts.html">
                 <div class="sb-nav-link-icon">
                   <i class="fas fa-chart-area"></i>
@@ -192,70 +227,56 @@
                   style="box-shadow: 10px; border-radius: 10px; border: none"
                 >
                   <div class="card-body">
-                    <div
-                      class="col title ps-0"
-                      style="
-                        border-bottom: 2px solid #ff7f5c;
-                        width: 140px;
-                        font-size: 15px;
-                      "
-                    >
-                      Form Tambah Blog
+                    <div class="row">
+                      <div class="col title" style="font-size: 15px">
+                        Visi Misi
+                      </div>
+
+                      <div class="col-6">
+                        <a
+                          href="eVisiMisi.html"
+                          class="btn float-end py-1"
+                          style="
+                            background-color: #e15b29;
+                            color: #fff;
+                            font-family: 'Manrope';
+                            font-size: 14px;
+                            border-radius: 8px;
+                            font-weight: 800;
+                          "
+                          >Edit</a
+                        >
+                      </div>
                     </div>
-                    <div class="col mt-4">
-                      <form action="">
-                        <div class="mb-3">
-                          <label for="judulBlog" class="form-label"
-                            >Judul Blog</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="judulBlog"
-                          />
-                        </div>
-                        <div class="mb-3">
-                          <label for="tanggal" class="form-label"
-                            >Tanggal</label
-                          >
-                          <input
-                            type="date"
-                            class="form-control"
-                            id="tanggal"
-                          />
-                        </div>
-                        <div class="mb-3">
-                          <label for="author" class="form-label">Author</label>
-                          <input type="text" class="form-control" id="author" />
-                        </div>
-                        <div class="mb-3">
-                          <label for="foto" class="form-label">Foto</label>
-                          <input class="form-control" id="foto" type="file" />
-                        </div>
-                        <div class="mb-3">
-                          <label for="isi" class="form-label">Isi</label>
-                          <textarea
-                            class="form-control"
-                            id="isi"
-                            rows="20"
-                          ></textarea>
-                        </div>
-                        <div class="my-4">
-                          <button
-                            type="submit"
-                            class="btn px-5 py-2 float-end"
-                            style="
-                              background-color: #ff7f5c;
-                              font-family: 'Public Sans';
-                              color: #fff;
-                              font-size: 14px;
-                              border-radius: 10px;
-                            "
-                          >
-                            Submit
-                          </button>
-                        </div>
-                      </form>
+
+                    <div class="row">
+                      <div class="col mt-4">
+                        <form action="">
+                          <div class="mb-3">
+                            <label for="visi" class="form-label">Visi</label>
+                            <input type="text" class="form-control" id="visi" />
+                          </div>
+                          <div class="mb-3">
+                            <label for="misi" class="form-label">Misi</label>
+                            <input type="text" class="form-control" id="misi" />
+                          </div>
+                          <div class="my-4">
+                            <button
+                              type="submit"
+                              class="btn px-5 py-2 float-end"
+                              style="
+                                background-color: #ff7f5c;
+                                font-family: 'Public Sans';
+                                color: #fff;
+                                font-size: 14px;
+                                border-radius: 10px;
+                              "
+                            >
+                              Submit
+                            </button>
+                          </div>
+                        </form>
+                      </div>
                     </div>
                   </div>
                 </div>

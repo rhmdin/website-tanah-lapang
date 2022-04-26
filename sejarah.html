@@ -22,7 +22,7 @@
     />
     <link rel="stylesheet" href="css/main.css" />
 
-    <title>Admin - Blog</title>
+    <title>Admin - Profil Kelurahan</title>
   </head>
 
   <body class="sb-sidenav-collapse-arrow">
@@ -203,7 +203,7 @@
                   </li>
                   <li class="active" aria-current="page">
                     <a
-                      href="blog.html"
+                      href="visi-misi.html"
                       class="btn btn-sm shadow-sm px-3"
                       style="
                         background-color: #ff7f5c;
@@ -212,7 +212,7 @@
                         font-size: 13px;
                         border-radius: 10px;
                       "
-                      >Blog</a
+                      >Profil Kelurahan</a
                     >
                   </li>
                 </ol>
@@ -227,70 +227,56 @@
                   style="box-shadow: 10px; border-radius: 10px; border: none"
                 >
                   <div class="card-body">
-                    <div
-                      class="col title ps-0"
-                      style="
-                        border-bottom: 2px solid #ff7f5c;
-                        width: 140px;
-                        font-size: 15px;
-                      "
-                    >
-                      Form Tambah Blog
+                    <div class="row">
+                      <div class="col title" style="font-size: 15px">
+                        Sejarah
+                      </div>
+
+                      <div class="col-6">
+                        <a
+                          href="eSejarah.html"
+                          class="btn float-end py-1"
+                          style="
+                            background-color: #e15b29;
+                            color: #fff;
+                            font-family: 'Manrope';
+                            font-size: 14px;
+                            border-radius: 8px;
+                            font-weight: 800;
+                          "
+                          >Edit</a
+                        >
+                      </div>
                     </div>
-                    <div class="col mt-4">
-                      <form action="">
-                        <div class="mb-3">
-                          <label for="judulBlog" class="form-label"
-                            >Judul Blog</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="judulBlog"
-                          />
-                        </div>
-                        <div class="mb-3">
-                          <label for="tanggal" class="form-label"
-                            >Tanggal</label
-                          >
-                          <input
-                            type="date"
-                            class="form-control"
-                            id="tanggal"
-                          />
-                        </div>
-                        <div class="mb-3">
-                          <label for="author" class="form-label">Author</label>
-                          <input type="text" class="form-control" id="author" />
-                        </div>
-                        <div class="mb-3">
-                          <label for="foto" class="form-label">Foto</label>
-                          <input class="form-control" id="foto" type="file" />
-                        </div>
-                        <div class="mb-3">
-                          <label for="isi" class="form-label">Isi</label>
-                          <textarea
-                            class="form-control"
-                            id="isi"
-                            rows="20"
-                          ></textarea>
-                        </div>
-                        <div class="my-4">
-                          <button
-                            type="submit"
-                            class="btn px-5 py-2 float-end"
-                            style="
-                              background-color: #ff7f5c;
-                              font-family: 'Public Sans';
-                              color: #fff;
-                              font-size: 14px;
-                              border-radius: 10px;
-                            "
-                          >
-                            Submit
-                          </button>
-                        </div>
-                      </form>
+
+                    <div class="row">
+                      <div class="col mt-4">
+                        <form action="">
+                          <div class="mb-3">
+                            <textarea
+                              class="form-control"
+                              id="isi"
+                              rows="20"
+                              placeholder="Type here"
+                            ></textarea>
+                          </div>
+                          <div class="my-4">
+                            <button
+                              type="submit"
+                              class="btn px-5 py-2 float-end"
+                              style="
+                                background-color: #ff7f5c;
+                                font-family: 'Public Sans';
+                                color: #fff;
+                                font-size: 14px;
+                                border-radius: 10px;
+                              "
+                            >
+                              Submit
+                            </button>
+                          </div>
+                        </form>
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -23,8 +23,12 @@
   <body class="sb-sidenav-collapse-arrow">
     <div id="layoutSidenav">
       <div id="layoutSidenav_nav">
-        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
-          <div class="sb-sidenav-menu">
+        <nav
+          class="sb-sidenav accordion sb-sidenav-dark"
+          id="sidenavAccordion"
+          style="color: #fafbff"
+        >
+          <div class="sb-sidenav-menu" style="background-color: #1b1c31">
             <div class="nav">
               <img class="avasidebar" src="pp.jpg" alt="Foto Profil" />
               <div
@@ -51,6 +55,8 @@
                 </div>
                 Admin
               </a>
+
+              <!-- Konten -->
               <a
                 class="nav-link collapsed"
                 href="#"
@@ -67,6 +73,8 @@
                   <i class="fas fa-angle-down"></i>
                 </div>
               </a>
+
+              <!-- Menu Konten -->
               <div
                 class="collapse"
                 id="collapseLayouts"
@@ -74,14 +82,47 @@
                 data-bs-parent="#sidenavAccordion"
               >
                 <nav class="sb-sidenav-menu-nested nav">
-                  <a class="nav-link" href="visi-misi.html">Profil Kelurahan</a>
-                  <a class="nav-link" href="layout-sidenav-light.html"
-                    >Organisasi</a
+                  <!-- Profil Kelurahan -->
+                  <a
+                    class="nav-link collapsed"
+                    href="#"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseLayouts2"
+                    aria-expanded="false"
+                    aria-controls="collapseLayouts"
+                    id="sidenavAccordion2"
                   >
+                    <div class="sb-nav-link">Profil Kelurahan</div>
+                    <div class="sb-sidenav-collapse-arrow">
+                      <i class="fas fa-angle-down"></i>
+                    </div>
+                  </a>
+
+                  <!-- Menu Profil Kelurahan -->
+                  <div
+                    class="collapse"
+                    id="collapseLayouts2"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#sidenavAccordion2"
+                  >
+                    <nav class="sb-sidenav-menu-nested nav">
+                      <a class="nav-link" href="visi-misi.html">Visi Misi</a>
+                      <a class="nav-link" href="sejarah.html">Sejarah</a>
+                      <a class="nav-link" href="struktur-organisasi.html"
+                        >Struktur Organisasi</a
+                      >
+                      <a class="nav-link" href="perangkat-kelurahan.html"
+                        >Perangkat Kelurahan</a
+                      >
+                    </nav>
+                  </div>
+
+                  <a class="nav-link" href="organisasi.html">Organisasi</a>
                   <a class="nav-link" href="blog.html">Blog</a>
                   <a class="nav-link" href="layout-sidenav-light.html">About</a>
                 </nav>
               </div>
+              <!-- Akhir Menu Konten -->
               <a class="nav-link" href="charts.html">
                 <div class="sb-nav-link-icon">
                   <i class="fas fa-chart-area"></i>
