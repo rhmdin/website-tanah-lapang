@@ -2,14 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Edit Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css"
       rel="stylesheet"
@@ -19,7 +13,11 @@
       src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Admin - Blog</title>
   </head>
+
   <body class="sb-sidenav-collapse-arrow">
     <div id="layoutSidenav">
       <div id="layoutSidenav_nav">
@@ -182,213 +180,255 @@
             </li>
           </ul>
         </nav>
+
         <main>
-          <div class="container-fluid px-lg-5" style="margin-top: 7mm">
-            <button
-              class="btntitle"
-              style="
-                background-color: #ff7f5c;
-                color: #fbfbfb;
-                background: #ff7f5c;
-              "
-            >
-              Admin
-            </button>
-            <div class="card mb-4">
-              <div
-                class="card-body"
-                style="
-                  box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
-                  border-radius: 10px;
-                "
-              >
-                <div class="card-header bg-white border-0">
-                  <div
-                    style="
-                      letter-spacing: -0.015em;
-                      font-weight: 600;
-                      color: #3734a9;
-                      margin-top: -3.2%;
-                    "
-                  >
-                    <i class="fas fa-table me-1"></i>
-                    Daftar Admin
-                    <button
-                      class="btntitle"
-                      style="
-                        color: #fbfbfb;
-                        border: transparent;
-                        background: #3734a9;
-                        float: right;
-                        font-size: 10pt;
-                      "
+          <div class="container">
+            <div class="content p-4">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="me-3">
+                    <a
+                      href="#"
+                      class="btn btn-sm"
+                      style="font-weight: bold; font-size: 13px; color: #404444"
                     >
-                      Admin
-                    </button>
-                    <hr
+                      Konten
+                    </a>
+                  </li>
+                  <li class="active" aria-current="page">
+                    <a
+                      href="#"
+                      class="btn btn-sm shadow-sm px-3"
                       style="
-                        border: 2.5px solid;
-                        color: #ff7f5c;
-                        width: 40mm;
-                        margin-top: -0.2%;
+                        background-color: #ff7f5c;
+                        color: #fff;
+                        font-weight: bold;
+                        font-size: 13px;
+                        border-radius: 10px;
                       "
-                    />
+                      >Blog</a
+                    >
+                  </li>
+                </ol>
+              </nav>
+
+              <div class="row mx-4 mt-5">
+                <div class="col-6">
+                  <div
+                    class="title ps-0"
+                    style="border-bottom: 2px solid #ff7f5c; width: 80px"
+                  >
+                    Daftar Blog
                   </div>
-                  <div></div>
                 </div>
-                <table id="datatablesSimple" style="border: transparent">
+
+                <div class="col-6">
+                  <a
+                    href="tBlog.html"
+                    class="btn float-end"
+                    style="
+                      background-color: #3734a9;
+                      color: #fff;
+                      font-size: 14px;
+                      font-weight: bold;
+                      border-radius: 10px;
+                    "
+                    >Tambah</a
+                  >
+                </div>
+              </div>
+
+              <div
+                class="row mt-4"
+                style="margin-left: 40px; margin-right: 40px"
+              >
+                <table
+                  id="datatablesSimple"
+                  class="table table-borderless"
+                  style="border: transparent"
+                >
                   <thead
                     style="
                       background-color: #ff7f5c;
-                      color: white;
-                      font-family: Public Sans;
-                      font-size: 15px;
-                      line-height: 21px;
-                      text-align: left;
-                      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                      color: #fff;
+                      font-size: 14px;
+                      height: 50px;
                     "
+                    class="shadow-sm align-middle"
                   >
                     <tr>
-                      <th>Nama</th>
-                      <th>No HP</th>
-                      <th>Role</th>
-                      <th>City</th>
-                      <th>Action</th>
+                      <th scope="col" style="border-radius: 3px 0 0 3px">
+                        Judul Blog
+                      </th>
+                      <th scope="col">Tanggal</th>
+                      <th scope="col">Author</th>
+                      <th scope="col" width="35%">Isi</th>
+                      <th scope="col" style="border-radius: 0 3px 3px 0">
+                        Action
+                      </th>
                     </tr>
                   </thead>
-                  <tfoot>
+                  <tbody>
                     <tr>
-                      <th>Nama</th>
-                      <th>No HP</th>
-                      <th>Role</th>
-                      <th>City</th>
-                      <th>Action</th>
-                    </tr>
-                  </tfoot>
-                  <tbody style="background-color: #fbfbfb">
-                    <tr>
-                      <td>Nedia Putri Ismala</td>
-                      <td>Admin</td>
-                      <td>Pekanbaru</td>
-                      <td>082222222222</td>
+                      <td>Berikut Tanggapan Lesti...</td>
+                      <td>08-08-2018</td>
+                      <td>Nedia Simanjuntak</td>
                       <td>
-                        <button
-                          type="button"
-                          class="btn btn-primary"
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam massa mi, facilisis vitae convallis in, eleifend
+                        vel sem...
+                      </td>
+                      <td>
+                        <a
+                          href="#"
+                          class="btn btn-sm"
                           style="background-color: #3734a9"
-                        >
-                          <i class="fas fa-search"></i>
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-warning"
+                          ><i class="bi bi-search" style="color: #fff"></i
+                        ></a>
+                        <a
+                          href="eBlog.html"
+                          class="btn btn-sm"
                           style="background-color: #e15b29"
-                        >
-                          <i class="fa fa-pencil" style="color: white"></i>
-                        </button>
-                        <button type="button" class="btn btn-danger">
-                          <i class="fa-solid fa-trash"></i>
-                        </button>
+                          ><i class="bi bi-pencil-fill" style="color: #fff"></i
+                        ></a>
+                        <a href="#" class="btn btn-sm btn-danger"
+                          ><i class="bi bi-trash-fill"></i
+                        ></a>
                       </td>
                     </tr>
                     <tr>
-                      <td>Ahmad Fadli Ramadhan</td>
-                      <td>Admin</td>
-                      <td>Bengkulu</td>
-                      <td>082222222222</td>
+                      <td>Berikut Tanggapan Lesti...</td>
+                      <td>08-08-2018</td>
+                      <td>Nedia Simanjuntak</td>
                       <td>
-                        <button
-                          type="button"
-                          class="btn btn-primary"
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam massa mi, facilisis vitae convallis in, eleifend
+                        vel sem...
+                      </td>
+                      <td>
+                        <a
+                          href="#"
+                          class="btn btn-sm"
                           style="background-color: #3734a9"
-                        >
-                          <i class="fas fa-search"></i>
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-warning"
+                          ><i class="bi bi-search" style="color: #fff"></i
+                        ></a>
+                        <a
+                          href="#"
+                          class="btn btn-sm"
                           style="background-color: #e15b29"
-                        >
-                          <i class="fa fa-pencil" style="color: white"></i>
-                        </button>
-                        <button type="button" class="btn btn-danger">
-                          <i class="fa-solid fa-trash"></i>
-                        </button>
+                          ><i class="bi bi-pencil-fill" style="color: #fff"></i
+                        ></a>
+                        <a href="#" class="btn btn-sm btn-danger"
+                          ><i class="bi bi-trash-fill"></i
+                        ></a>
                       </td>
                     </tr>
                     <tr>
-                      <td>Ahmad Fadli Ramadhan</td>
-                      <td>Admin</td>
-                      <td>Bengkulu</td>
-                      <td>082222222222</td>
+                      <td>Berikut Tanggapan Lesti...</td>
+                      <td>08-08-2018</td>
+                      <td>Nedia Simanjuntak</td>
                       <td>
-                        <button
-                          type="button"
-                          class="btn btn-primary"
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam massa mi, facilisis vitae convallis in, eleifend
+                        vel sem...
+                      </td>
+                      <td>
+                        <a
+                          href="#"
+                          class="btn btn-sm"
                           style="background-color: #3734a9"
-                        >
-                          <i class="fas fa-search"></i>
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-warning"
+                          ><i class="bi bi-search" style="color: #fff"></i
+                        ></a>
+                        <a
+                          href="#"
+                          class="btn btn-sm"
                           style="background-color: #e15b29"
-                        >
-                          <i class="fa fa-pencil" style="color: white"></i>
-                        </button>
-                        <button type="button" class="btn btn-danger">
-                          <i class="fa-solid fa-trash"></i>
-                        </button>
+                          ><i class="bi bi-pencil-fill" style="color: #fff"></i
+                        ></a>
+                        <a href="#" class="btn btn-sm btn-danger"
+                          ><i class="bi bi-trash-fill"></i
+                        ></a>
                       </td>
                     </tr>
                     <tr>
-                      <td>Ahmad Fadli Ramadhan</td>
-                      <td>Admin</td>
-                      <td>Bengkulu</td>
-                      <td>082222222222</td>
+                      <td>Berikut Tanggapan Lesti...</td>
+                      <td>08-08-2018</td>
+                      <td>Ane Simanjuntak</td>
                       <td>
-                        <button
-                          type="button"
-                          class="btn btn-primary"
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam massa mi, facilisis vitae convallis in, eleifend
+                        vel sem...
+                      </td>
+                      <td>
+                        <a
+                          href="#"
+                          class="btn btn-sm"
                           style="background-color: #3734a9"
-                        >
-                          <i class="fas fa-search"></i>
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-warning"
+                          ><i class="bi bi-search" style="color: #fff"></i
+                        ></a>
+                        <a
+                          href="#"
+                          class="btn btn-sm"
                           style="background-color: #e15b29"
-                        >
-                          <i class="fa fa-pencil" style="color: white"></i>
-                        </button>
-                        <button type="button" class="btn btn-danger">
-                          <i class="fa-solid fa-trash"></i>
-                        </button>
+                          ><i class="bi bi-pencil-fill" style="color: #fff"></i
+                        ></a>
+                        <a href="#" class="btn btn-sm btn-danger"
+                          ><i class="bi bi-trash-fill"></i
+                        ></a>
                       </td>
                     </tr>
                     <tr>
-                      <td>Ahmad Fadli Ramadhan</td>
-                      <td>Admin</td>
-                      <td>Bengkulu</td>
-                      <td>082222222222</td>
+                      <td>Berikut Tanggapan Lesti...</td>
+                      <td>08-08-2018</td>
+                      <td>Nedia Simanjuntak</td>
                       <td>
-                        <button
-                          type="button"
-                          class="btn btn-primary"
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam massa mi, facilisis vitae convallis in, eleifend
+                        vel sem...
+                      </td>
+                      <td>
+                        <a
+                          href="#"
+                          class="btn btn-sm"
                           style="background-color: #3734a9"
-                        >
-                          <i class="fas fa-search"></i>
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-warning"
+                          ><i class="bi bi-search" style="color: #fff"></i
+                        ></a>
+                        <a
+                          href="#"
+                          class="btn btn-sm"
                           style="background-color: #e15b29"
-                        >
-                          <i class="fa fa-pencil" style="color: white"></i>
-                        </button>
-                        <button type="button" class="btn btn-danger">
-                          <i class="fa-solid fa-trash"></i>
-                        </button>
+                          ><i class="bi bi-pencil-fill" style="color: #fff"></i
+                        ></a>
+                        <a href="#" class="btn btn-sm btn-danger"
+                          ><i class="bi bi-trash-fill"></i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Berikut Tanggapan Lesti...</td>
+                      <td>08-08-2018</td>
+                      <td>Nedia Simanjuntak</td>
+                      <td>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam massa mi, facilisis vitae convallis in, eleifend
+                        vel sem...
+                      </td>
+                      <td>
+                        <a
+                          href="#"
+                          class="btn btn-sm"
+                          style="background-color: #3734a9"
+                          ><i class="bi bi-search" style="color: #fff"></i
+                        ></a>
+                        <a
+                          href="#"
+                          class="btn btn-sm"
+                          style="background-color: #e15b29"
+                          ><i class="bi bi-pencil-fill" style="color: #fff"></i
+                        ></a>
+                        <a href="#" class="btn btn-sm btn-danger"
+                          ><i class="bi bi-trash-fill"></i
+                        ></a>
                       </td>
                     </tr>
                   </tbody>
